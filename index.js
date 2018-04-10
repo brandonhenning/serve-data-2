@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+console.log(process.env.PORT)
 const port = process.env.PORT || 3000
 
 const app = express()
@@ -93,4 +94,4 @@ app.get('/:id', function (req, res) {
     res.json({data: record})
 })
 
-app.listen(3000)
+app.listen(port)
