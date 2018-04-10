@@ -78,6 +78,7 @@ function findById (data, id) {
 }
 
 app.get('/', function (req, res) {
+    console.log('got')
     res.json({data: instructors})
 })
 
