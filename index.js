@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-console.log(process.env.PORT)
 const port = process.env.PORT || 3000
 
 const app = express()
@@ -79,7 +78,6 @@ function findById (data, id) {
 }
 
 app.get('/', function (req, res) {
-    console.log('got')
     res.json({data: instructors})
 })
 
